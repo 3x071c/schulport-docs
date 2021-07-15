@@ -182,5 +182,29 @@
 	"theme.Playground.liveEditor": {
 		"message": "Live Editor",
 		"description": "The live editor label of the live codeblocks"
+	},
+	"features.1.description": {
+		"message": "Mit Schulport können Schüler wichtige Termine, Veranstaltungen, Hausaufgaben, ihren Vertretungsplan und vieles mehr einsehen",
+		"description": "The first item of the feature showcase on the landing page"
+	},
+	"features.1.title": {
+		"message": "Bequem",
+		"description": "The first item of the feature showcase on the landing page"
+	},
+	"features.2.description": {
+		"message": "Verfügbar auf allen bekannten Plattformen als hybride Webapp (Web, iOS, android, und mehr)",
+		"description": "The second item of the feature showcase on the landing page"
+	},
+	"features.2.title": {
+		"message": "Zugänglich",
+		"description": "The second item of the feature showcase on the landing page"
+	},
+	"features.3.description": {
+		"message": "Schöne Benutzeroberfläche, Gute Dokumentation, und Einfacher Code",
+		"description": "The third item of the feature showcase on the landing page"
+	},
+	"features.3.title": {
+		"message": "Genial",
+		"description": "The third item of the feature showcase on the landing page"
 	}
 }
