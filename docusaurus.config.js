@@ -5,6 +5,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
 	baseUrl: '/',
 	favicon: 'img/favicon.ico',
+	i18n: {
+		defaultLocale: 'en',
+		locales: ['en', 'de'],
+	},
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
 	organizationName: '3x071c',
@@ -14,11 +18,11 @@ module.exports = {
 			'@docusaurus/preset-classic',
 			{
 				blog: {
-					editUrl: 'https://github.com/3x071c/schulport-docs/edit/master/website/blog/',
+					editUrl: 'https://github.com/3x071c/schulport-docs/edit/trunk/website/blog/',
 					showReadingTime: true,
 				},
 				docs: {
-					editUrl: 'https://github.com/3x071c/schulport-docs/edit/master/website/',
+					editUrl: 'https://github.com/3x071c/schulport-docs/edit/trunk/website/',
 					sidebarPath: require.resolve('./sidebars.js'),
 				},
 				theme: {
@@ -45,7 +49,7 @@ module.exports = {
 				{
 					items: [
 						{
-							label: 'Blog',
+							label: 'Updates',
 							to: '/blog',
 						},
 						{
@@ -67,9 +71,13 @@ module.exports = {
 					type: 'doc',
 				},
 				{
-					label: 'Blog',
+					label: 'Updates',
 					position: 'left',
 					to: '/blog',
+				},
+				{
+					position: 'right',
+					type: 'localeDropdown',
 				},
 				{
 					href: 'https://github.com/3x071c/schulport-docs',
