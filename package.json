@@ -1,0 +1,143 @@
+{
+	"name": "schulport-docs",
+	"version": "0.0.0",
+	"description": "Documentation for schulport",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/3x071c/schulport-docs.git"
+	},
+	"homepage": "https://docs.schulport.com",
+	"bugs": {
+		"url": "https://github.com/3x071c/schulport-docs/issues"
+	},
+	"author": {
+		"name": "Victor Homic",
+		"email": "dev@3x071c.com",
+		"url": "https://3x071c.com"
+	},
+	"license": "AGPL-3.0-or-later",
+	"private": true,
+	"engines": {
+		"node": ">= 12.22.1"
+	},
+	"os": [
+		"linux"
+	],
+	"scripts": {
+		"build": "cross-env NODE_ENV=production docusaurus build",
+		"ci:dev": "pnpm install --frozen-lockfile",
+		"ci:pnpm": "npm install --global pnpm@latest",
+		"ci:prod": "pnpm install --frozen-lockfile --prod",
+		"clear": "docusaurus clear",
+		"commit": "run-s commit:'*'",
+		"commit:1": "run-s stage",
+		"commit:2": "cz",
+		"dev": "cross-env NODE_ENV=development docusaurus start",
+		"docusaurus": "docusaurus",
+		"eslint:fix": "pnpm eslint:report -- --fix",
+		"eslint:individual": "pnpm eslint:template -- --fix",
+		"eslint:report": "pnpm eslint:template -- .",
+		"eslint:template": "eslint --report-unused-disable-directives --no-error-on-unmatched-pattern --max-warnings 0 --ignore-path .gitignore --ext .tsx,.ts,.jsx,.js,.mjs,.cjs",
+		"fix": "run-s format",
+		"format": "run-s prettier:fix eslint:fix stylelint:fix",
+		"lint": "run-s prettier:report eslint:report stylelint:report",
+		"new": "npm run new:1 && npm run new:2 && npm run new:3",
+		"new:1": "npm install -g pnpm@latest",
+		"new:2": "pnpm install",
+		"pnpm": "run-s -c 'pnpm:*'",
+		"pnpm:1": "pnpm update -L",
+		"pnpm:2": "run-s stage",
+		"pnpm:3": "git commit -m 'chore: bumped dependencies'",
+		"preinstall": "pnpx -y only-allow pnpm",
+		"prepare": "husky install",
+		"prettier:fix": "pnpm prettier:template2 -- --write",
+		"prettier:individual": "pnpm prettier:template -- --write",
+		"prettier:report": "pnpm prettier:template2 -- --check",
+		"prettier:template": "prettier --plugin-search-dir=. --ignore-unknown --ignore-path=.gitignore",
+		"prettier:template2": "pnpm prettier:template -- . !pnpm-lock.yaml",
+		"prod": "run-s build start",
+		"pull": "git pull --all --rebase",
+		"push": "git push --prune",
+		"report": "run-s lint",
+		"serve": "docusaurus serve",
+		"stage": "git add -A",
+		"stylelint:fix": "pnpm stylelint:report -- --fix",
+		"stylelint:individual": "pnpm stylelint:template -- --fix",
+		"stylelint:report": "pnpm stylelint:template -- \"./**/*.{tsx,jsx,html,pcss,css}\"",
+		"stylelint:template": "stylelint --cache --report-needless-disables --report-invalid-scope-disables --report-descriptionless-disables --max-warnings 0 --ignore-path .gitignore",
+		"swizzle": "docusaurus swizzle",
+		"sync": "run-s -c format commit pnpm pull push",
+		"write-heading-ids": "docusaurus write-heading-ids",
+		"write-translations": "docusaurus write-translations",
+		"test": "exit 0"
+	},
+	"dependencies": {
+		"@docusaurus/core": "2.0.0-beta.3",
+		"@docusaurus/plugin-ideal-image": "^2.0.0-beta.3",
+		"@docusaurus/plugin-pwa": "^2.0.0-beta.3",
+		"@docusaurus/preset-classic": "2.0.0-beta.3",
+		"@docusaurus/theme-live-codeblock": "^2.0.0-beta.3",
+		"@mdx-js/react": "^1.6.22",
+		"@svgr/webpack": "^5.5.0",
+		"clsx": "^1.1.1",
+		"cross-env": "^7.0.3",
+		"file-loader": "^6.2.0",
+		"npm-run-all": "^4.1.5",
+		"prism-react-renderer": "^1.2.1",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"url-loader": "^4.1.1"
+	},
+	"devDependencies": {
+		"@algolia/client-search": "^4.10.3",
+		"@babel/core": "^7.14.6",
+		"@commitlint/cli": "^12.1.4",
+		"@commitlint/config-conventional": "^12.1.4",
+		"@types/react": "^17.0.14",
+		"browserslist": "^4.16.6",
+		"commitizen": "^4.2.4",
+		"cz-conventional-changelog": "^3.3.0",
+		"eslint": "^7.30.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-react": "^7.24.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+		"eslint-plugin-sort-keys-fix": "^1.1.1",
+		"husky": "^7.0.1",
+		"lint-staged": "^11.0.1",
+		"prettier": "^2.3.2",
+		"prettier-plugin-pkg": "^0.10.0",
+		"prettier-plugin-sh": "^0.7.1",
+		"prop-types": "^15.7.2",
+		"stylelint": "^13.13.1",
+		"stylelint-config-prettier": "^8.0.2",
+		"stylelint-config-recommended": "^5.0.0",
+		"webpack": "^5.44.0"
+	},
+	"browserslist": {
+		"production": [
+			"defaults",
+			"Firefox ESR",
+			"not dead"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
+	},
+	"lint-staged": {
+		"*": "pnpm prettier:individual",
+		"*.{tsx,ts,jsx,js,mjs,cjs}": "pnpm eslint:individual",
+		"*.{tsx,jsx,html,pcss,css}": "pnpm stylelint:individual"
+	}
+}

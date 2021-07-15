@@ -1,0 +1,34 @@
+name: CI
+
+on:
+    - push
+
+jobs:
+    ci:
+        name: Continuous Integration
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout the current repository
+              uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+            - name: Setup NodeJS 16
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 16
+            - name: Install pnpm
+              run: npm run ci:pnpm
+            - name: Install dependencies
+              run: pnpm ci:dev
+            - name: Run Linters
+              run: pnpm lint
+              env:
+                  CI: true
+            - name: Run Tests
+              run: pnpm test
+              env:
+                  CI: true
+            - name: Run Build
+              run: pnpm build
+              env:
+                  CI: true
