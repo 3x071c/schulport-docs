@@ -25,7 +25,6 @@
 		"no-duplicate-at-import-rules": true,
 		"no-duplicate-selectors": true,
 		"no-empty-source": true,
-		"color-named": "never",
 		"function-url-no-scheme-relative": true,
 		"keyframes-name-pattern": "[a-z0-9]+(?:[A-Z][a-z0-9]+)*",
 		"number-max-precision": 2,
