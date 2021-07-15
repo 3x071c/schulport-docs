@@ -2,23 +2,19 @@
 sidebar_position: 4
 ---
 
-# Development
+# Entwicklung
 
-## Scripts
+## Skripte
 
-Reminder: prefix all of these scripts with `pnpm`/`pnpm run`!
+-   `new`: Neue lokale Kopie nach dem Herunterladen einrichten
+-   `sync|commit|...`: Diese Skripte haben mit dem git-Workflow zu tun und werden deshalb dort auch erklärt
+-   `dev`: Starten einer automatisch neuladenenden Entwicklungswebseite (auf `localhost:3000`)
+-   `web`: Erstellen ("builden") einer optimierten Webseite für den öffentlichen Release ("production")
+-   `format`: Formatiert den Code automatisch
+-   `lint`: Meldet Probleme (bspw. stilistisch) im Code
+-   `test`: Führt die Tests aus
 
--   `sync|commit|...`: These scripts are related to git operations and are explained in the Contributing guide
--   `dev`: Starts a hot-reloading development environment
--   `web`: Builds a production-ready website
--   `native`: Builds a production-ready native app (Important: run `web` before this!)
--   `deploy`: Build both `web` and `native` output
--   `format`: Automatically formats all code, and reports issues
--   `lint`: Reports code style issues
--   `new`: Set up the project after the initial clone
--   `test`: Run code testing tools
-
-## Tech Stack
+## Technologien (Englisch)
 
 -   [Git](https://git-scm.com/) - Version control
 -   [Editorconfig](https://editorconfig.org/) - IDE file style consistency

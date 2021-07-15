@@ -2,9 +2,9 @@
 sidebar-position: 4
 ---
 
-# Contributing
+# Workflow
 
-We appreciate contributions! To get familiar with our development workflow, please read this document carefully!
+This document details our development workflow, from the first local change to the remote deployment.
 
 ## Trunk based development
 

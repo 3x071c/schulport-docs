@@ -1,4 +1,5 @@
 import React from 'react';
+import Translate, { translate } from '@docusaurus/Translate';
 import appImg from '../../static/img/undraw_progressive_app.svg';
 import appreciationImg from '../../static/img/undraw_Appreciation.svg';
 import clsx from 'clsx';
@@ -9,25 +10,51 @@ const FeatureList = [
 	{
 		Svg: educationImg,
 		description: (
-			<>
+			<Translate
+				id='features.1.description'
+				description='The first item of the feature showcase on the landing page'>
 				Schulport enables students to check important dates, events, homework, their substitution schedule, and
 				more
-			</>
+			</Translate>
 		),
 		id: 1,
-		title: 'Convenient',
+		title: translate({
+			description: 'The first item of the feature showcase on the landing page',
+			id: 'features.1.title',
+			message: 'Convenient',
+		}),
 	},
 	{
 		Svg: appImg,
-		description: <>Available on all major platforms as a hybrid web app (Web, iOS, android, and possibly more)</>,
+		description: (
+			<Translate
+				id='features.2.description'
+				description='The second item of the feature showcase on the landing page'>
+				Available on all major platforms as a hybrid web app (Web, iOS, android, and possibly more)
+			</Translate>
+		),
 		id: 2,
-		title: 'Approachable',
+		title: translate({
+			description: 'The second item of the feature showcase on the landing page',
+			id: 'features.2.title',
+			message: 'Approachable',
+		}),
 	},
 	{
 		Svg: appreciationImg,
-		description: <>Well documented, exceptionally beautiful</>,
+		description: (
+			<Translate
+				id='features.3.description'
+				description='The third item of the feature showcase on the landing page'>
+				Well documented, exceptionally beautiful
+			</Translate>
+		),
 		id: 3,
-		title: 'Awesome',
+		title: translate({
+			description: 'The third item of the feature showcase on the landing page',
+			id: 'features.3.title',
+			message: 'Awesome',
+		}),
 	},
 ];
 
