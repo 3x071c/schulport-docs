@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Setup
 
+Dieses Setup beschreibt die **lokale Einrichtung**. Es bestehen leichtere Optionen; siehe [Einleitung](intro).
+
 ## NodeJS installieren
 
 [NodeJS](https://nodejs.org/), eine serverseitige JavaScript runtime, ist für dieses Projekt notwendig. Sie kann von der offiziellen Webseite installiert werden - wir empfehlen die neuste, nicht-LTS Version. Sie inkludiert `npm`, den Packetmanager für NodeJS-Projekte.
