@@ -6,7 +6,11 @@ sidebar-position: 3
 
 > `JS` stands for JavaScript
 
-_Achtung: Dieser Abschnitt wurde noch nicht übersetzt_
+:::caution
+
+Achtung: Dieser Abschnitt wurde noch nicht übersetzt
+
+:::
 
 ## Prerequisites
 

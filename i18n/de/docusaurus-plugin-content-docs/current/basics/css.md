@@ -6,7 +6,11 @@ sidebar_position: 2
 
 > `CSS` stands for Cascading Style Sheets
 
-_Achtung: Dieser Abschnitt wurde noch nicht übersetzt_
+:::caution
+
+Achtung: Dieser Abschnitt wurde noch nicht übersetzt
+
+:::
 
 ## Prerequisites
 
