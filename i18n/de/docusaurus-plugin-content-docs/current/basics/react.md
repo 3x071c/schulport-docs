@@ -4,7 +4,11 @@ sidebar-position: 4
 
 # React
 
-_Achtung: Dieser Abschnitt wurde noch nicht übersetzt_
+:::caution
+
+Achtung: Dieser Abschnitt wurde noch nicht übersetzt
+
+:::
 
 ## Prerequisites
 

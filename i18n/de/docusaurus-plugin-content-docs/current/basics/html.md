@@ -6,7 +6,11 @@ sidebar_position: 1
 
 > `HTML` stands for HyperText Markup Language
 
-_Achtung: Dieser Abschnitt wurde noch nicht übersetzt_
+:::caution
+
+Achtung: Dieser Abschnitt wurde noch nicht übersetzt
+
+:::
 
 ## Prerequisites
 

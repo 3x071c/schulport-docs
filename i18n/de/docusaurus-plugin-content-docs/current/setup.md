@@ -10,7 +10,7 @@ sidebar_position: 3
 
 ## Visual Studio Code installieren
 
-[Visual Studio Code](https://code.visualstudio.com/) ist der empfohlene Editor für die Entwicklung, weil wir schon voreingestellte Konfigurationsdateien für ihn haben, welche einen reibungslosen Entwicklungsprozess ermöglichen.
+[Visual Studio Code](https://code.visualstudio.com/) ist der empfohlene Editor für die Entwicklung, weil wir schon voreingestellte Konfigurationsdateien für ihn haben, welche einen reibungslosen Entwicklungsprozess ermöglichen. Wenn das Projekt geöffnet wird, muss dem Ordner in der mittigen Dialogbox vertraut werden, und dann die empfohlene Extensions aus der Dialogbox unten rechts installiert werden - eine Bestätigung sollte genügen, um Visual Studio Code für das Projekt einzurichten.
 
 ## Setup-Skript ausführen
 

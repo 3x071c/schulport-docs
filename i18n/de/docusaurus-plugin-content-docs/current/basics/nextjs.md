@@ -4,7 +4,11 @@ sidebar-position: 5
 
 # NextJS
 
-_Achtung: Dieser Abschnitt wurde noch nicht übersetzt_
+:::caution
+
+Achtung: Dieser Abschnitt wurde noch nicht übersetzt
+
+:::
 
 ## Prerequisites
 
