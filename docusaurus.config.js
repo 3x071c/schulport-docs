@@ -18,11 +18,11 @@ module.exports = {
 			'@docusaurus/preset-classic',
 			{
 				blog: {
-					editUrl: 'https://github.com/3x071c/schulport-docs/edit/trunk/website/blog/',
+					editUrl: 'https://github.com/3x071c/schulport-docs/edit/trunk/',
 					showReadingTime: true,
 				},
 				docs: {
-					editUrl: 'https://github.com/3x071c/schulport-docs/edit/trunk/website/',
+					editUrl: 'https://github.com/3x071c/schulport-docs/edit/trunk/',
 					sidebarPath: require.resolve('./sidebars.js'),
 				},
 				theme: {
