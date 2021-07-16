@@ -53,7 +53,7 @@ module.exports = {
 							to: '/blog',
 						},
 						{
-							href: 'https://github.com/3x071c/schulport-docs',
+							href: 'https://github.com/3x071c/schulport',
 							label: 'GitHub',
 						},
 					],
@@ -80,7 +80,7 @@ module.exports = {
 					type: 'localeDropdown',
 				},
 				{
-					href: 'https://github.com/3x071c/schulport-docs',
+					href: 'https://github.com/3x071c/schulport',
 					label: 'GitHub',
 					position: 'right',
 				},
