@@ -58,7 +58,7 @@
 		"prettier:template2": "pnpm prettier:template -- . !pnpm-lock.yaml",
 		"prod": "run-s build start",
 		"pull": "git pull --all --rebase",
-		"push": "git push --prune",
+		"push": "git push --prune -u origin HEAD",
 		"report": "pnpm lint",
 		"serve": "docusaurus serve",
 		"stage": "git add -A",
