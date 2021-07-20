@@ -1,5 +1,5 @@
 ---
-sidebar-position: 5
+sidebar-position: 6
 ---
 
 # Design
